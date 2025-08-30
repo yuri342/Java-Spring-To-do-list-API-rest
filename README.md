@@ -38,12 +38,19 @@ Este projeto é uma API REST desenvolvida com Spring Boot para gerenciar tarefas
 - **DELETE /Todos/{id}**  
   Remove uma tarefa pelo ID.
 
-## Tecnologias
+## Tecnologias e praticas adotadas
 
 - Java 17+
 - Spring Boot
 - Spring Data JPA
-- H2 Database (padrão, pode ser alterado)
+- Spring MVC
+- Api Rest
+- Postrgress database
+- SOLID , DRY , YAGNI, KISS
+- Arquitetura de camadas
+- Tratamento de resposta de erros
+- Swagger
+- Injeção de Dependencias
 
 ## Como executar
 
