@@ -1,3 +1,15 @@
+# Branch UI
+Esta branch é onde eu criei uma aplicação web front end para se comunicar com a api rest todo list - ainda esta em desenvolvimento
+Nesta branch foram usados tecnologias e estruturas como;
+
+-Axios
+-React
+-Vite
+-Tailwind
+-UseState, UseEffect
+-Json manipulation
+-Multi-Component estructure
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
