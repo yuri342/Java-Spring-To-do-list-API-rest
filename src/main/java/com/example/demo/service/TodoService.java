@@ -24,11 +24,10 @@ public class TodoService {
         return todoRepository.save(todo);
     }
 
-    public List<Todo> updateTodos(Todo todo){
+    public List<?> updateTodos(Todo todo){
         if (!todoRepository.existsById(todo.getId())) {
             throw new RuntimeException("To-do com ID " + todo.getId() + " não encontrado.");
         }
-
         todoRepository.save(todo);
         return findAll();
     }

@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +19,7 @@ import com.example.demo.model.Todo;
 import com.example.demo.service.TodoService;
 
 import jakarta.validation.Valid;
-
+@Controller
 @CrossOrigin
 @RestController
 @RequestMapping("/Todos")
@@ -61,7 +62,7 @@ public class TodoController {
     }
 
     @PutMapping
-    public List<Todo> updateTodos(@RequestBody Todo todo){
-        return todoService.updateTodos(todo);
+    public ResponseEntity<?> updateTodos(@RequestBody Todo todo){
+        return ResponseEntity.status(201).body(todoService.updateTodos(todo));
     }
 }
